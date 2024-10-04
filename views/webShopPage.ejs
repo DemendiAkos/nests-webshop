@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        input {
+            margin-top: 10px;
+        }
+        button {
+            margin-top: 10px;
+            width: 25%;
+            height: 25%;
+            font-size: large;
+            margin-bottom: 25%;
+        }
+    </Style>
+</head>
+<body>
+    <form action="/buy">
+        <label>
+            <img src="https://p1.akcdn.net/full/998179977.dell-xps-13-plus-9320-9320fi7wb1.jpg"  alt="">
+            <input type="radio" name="laptop" value="dell-xps-13">
+            Dell XPS 13
+        </label><br>
+        <label>
+            <img src="https://www.notebookcheck-hu.com/uploads/tx_nbc2/Bildschirmfoto_2021-06-25_um_10.31.16.png" alt="">
+            <input type="radio" name="laptop" value="macbook-pro-16">
+            MacBook Pro 16
+        </label><br>
+        <label>
+            <img src="https://www.notebookcheck-hu.com/uploads/tx_nbc2/spectreteaser.png" alt="">
+            <input type="radio" name="laptop" value="hp-spectre-x360">
+            HP Spectre x360
+        </label><br>
+        <button type="submit">Buy Product</button>
+    </form>
+</body>
+</html>
