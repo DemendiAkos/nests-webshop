@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        i {
+            color: #007BFF;
+        }
+    </style>
 </head>
 <body>
-    <h1>Done</h1>
+    <h1>User named <i><%= purchase.name %></i>, have successfully ordered</h1>
+    <h3>Product:<i> <%= purchase.product %></i></h3>
 </body>
 </html>

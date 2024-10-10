@@ -38,7 +38,8 @@ export class AppController {
    
   @Get('buy')
   @Render('BuyProduct')
-  Payment (@Query('laptop') laptop: string) {
+  Payment (@Query('laptop') laptop: string,
+          @Query('image') image: string) {
     return {
       laptop: laptop,
       errors: [],
@@ -61,7 +62,7 @@ export class AppController {
       cvc: buyerData.cvc,
     }
 
-    
+    console.log(newpurchase);
 
     //Check Errors
     const errors: string[] = [];
@@ -138,7 +139,10 @@ export class AppController {
   @Render('success')
   success() {
     return {
-      purchases: this.#purchases
+      purchase:  {
+        name: this.#purchases[this.#purchases.length - 1].name,
+        product: this.#purchases[this.#purchases.length - 1].product,
+      }
     }
   }
 
